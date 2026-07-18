@@ -24,7 +24,15 @@ $$g_{rr}^{\text{regularized}}\Big|_{r=2M} = \frac{1}{j}$$
 ### Prerequisites
 * Python 3.8+
 * NumPy / Matplotlib
+# Quick code preview: Running the joint sector validation
+from Test_GR_QC import Unified7DEngine
 
+# Initialize the 7D tracking grid across the horizon
+engine = Unified7DEngine(mass=1.0)
+results = engine.evaluate_boundary_damping()
+
+# Confirm that the radial metric element maps to the finite ring invariant
+print(f"Horizon g_rr value: {results.g_rr_horizon}") # Returns "1/j"
 ### Execution
 Run the event horizon transition simulation:
 ```bash
