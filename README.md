@@ -18,7 +18,7 @@ $$g_{rr}^{\text{regularized}}\Big|_{r=2M} = \frac{1}{j}$$
 * **7D Phase-Space Tracker:** Coordinate tracking modules handling the joint base vector $\mathbf{X} = (x, y, z, t, \tau, \phi, \chi)$.
 * **Split Derivative Simulation:** Independent processing arrays for macroscopic relativity and microscopic quantum configurations before metric tensor recombination.
 * **Horizon Transition Profiler:** Numerical modeling demonstrating the smooth convergence of $g_{rr}$ from flat Minkowski space at long range ($r \to \infty$) down to the stable $1/j$ boundary value.
-
+* **Dual-Time Evolution:** Resolves the classical horizon time-freeze ($dt \to \infty$) by shifting the evolutionary load to the localized quantum time coordinate ($\tau$). While macroscopic clock time appears stationary to an external observer, the simulation tracks continuous, finite phase rotations within the nilpotent configuration fiber governed by $-i \hbar \frac{\partial \psi}{\partial \tau} = \hat{H}_{\text{QC}} \psi$.
 ## 📦 Getting Started
 
 ### Prerequisites
